@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School WiFi Voucher System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>School WiFi Access</h1>
+            <p>Enter your student ID to receive a WiFi voucher</p>
+            
+            <form id="voucherForm">
+                <div class="input-group">
+                    <label for="studentId">Student ID:</label>
+                    <input type="text" id="studentId" name="studentId" placeholder="Enter your 8-digit student ID" required>
+                    <small>Format: 8 digits (e.g., 12345678)</small>
+                </div>
+                
+                <button type="submit">Get Voucher</button>
+            </form>
+            
+            <div id="result" class="result hidden">
+                <h2>Your WiFi Voucher</h2>
+                <div class="voucher">
+                    <div class="voucher-code" id="voucherCode">XXXX-XXXX-XXXX</div>
+                    <p>Expires in 24 hours</p>
+                </div>
+                <button id="printBtn">Print Voucher</button>
+            </div>
+            
+            <div id="error" class="error hidden"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
