@@ -7,7 +7,7 @@ Frontend: HTML/CSS/JS interface for user input and voucher display
 Backend: PHP script to validate school IDs and generate vouchers
 Security: Simple allowed list stored in a JSON file (in production, use a database)
 
-#  IT WORKS
+# IT WORKS
 User Interface: Students enter their 8-digit ID in the form
 
 # Validation:
@@ -34,17 +34,17 @@ allowed_students.json (will be auto-generated with sample data)
 Host on a PHP-enabled server (Apache with PHP module or similar)
 To add more students, edit the allowed_students.json file
 
-#SECURITY CONSIDERATIONS
+# SECURITY CONSIDERATIONS
 
-#For Production Use:
+# For Production Use:
 Store allowed students in a database instead of JSON file
 Implement proper authentication for admin access
 Add rate limiting to prevent brute force attacks
 Store vouchers in database with expiration timestamps
 Use HTTPS to encrypt all communications
 
-#Voucher Security:
+# Voucher Security:
 Vouchers should be single-use or time-limited
 Implement a redemption system to validate vouchers at the hotspot
 
-This solution provides a complete, functional voucher system that can be easily extended for production use with additional security measures.#
+This solution provides a complete, functional voucher system that can be easily extended for production use with additional security measures.
